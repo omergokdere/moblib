@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DatabaseBookSearchingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/ToolbarStyle"
+        app:theme="@style/ToolbarStyle"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="84dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                android:id="@+id/tvSearchBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search By:" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spnSearchBy"
+                    android:layout_below="@+id/tvSearchBy"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:spinnerMode="dropdown"
+                    android:prompt="@string/search_by_prompt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSearchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search Text:" />
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tbxSearchText" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="Search"
+                android:id="@+id/btnSearch"
+                android:background="#aaaddd11"/>
+        </LinearLayout>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataGrid" />
+    </LinearLayout>
+</RelativeLayout>
