@@ -12,7 +12,7 @@ Database book search engine is not available for security reasons.You have to in
 
 Tables and all informations about project are given in documentation.
 
-Documentation is CAPSTONE.docx  : ![](https://github.com/omergokdere/moblib/blob/master/CAPSTONE.docx)
+Documentation is CAPSTONE.docx  ![](https://github.com/omergokdere/moblib/blob/master/CAPSTONE.docx)
 
 Screenshots of application are given below ; (you can check all screenshots in screenshot folder)
 
